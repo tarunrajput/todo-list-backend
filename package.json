@@ -8,16 +8,25 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "start": "cross-env NODE_ENV=production node index.js",
-    "dev": "cross-env NODE_ENV=development nodemon index.js",
-    "debug": "cross-env DEBUG=express:* nodemon index.js"
+    "start": "cross-env NODE_ENV=production node -r dotenv/config index.js dotenv_config_path=config/.env",
+    "dev": "cross-env NODE_ENV=development nodemon -r dotenv/config index.js dotenv_config_path=config/.env",
+    "debug": "cross-env DEBUG=express:* nodemon -r dotenv/config index.js dotenv_config_path=config/.env"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "cross-env": "^7.0.3",
     "express": "^4.18.1",
+    "helmet": "^5.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.7",
+    "morgan": "^1.10.0",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.0",
     "winston": "^3.3.3"
   },
   "devDependencies": {
-    "nodemon": "^2.0.18"
+    "dotenv": "^16.0.1",
+    "nodemon": "^2.0.18",
+    "prettier": "^2.7.1"
   }
 }
