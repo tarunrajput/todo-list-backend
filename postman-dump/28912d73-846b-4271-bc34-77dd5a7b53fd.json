@@ -1,0 +1,30 @@
+{
+  "id": "28912d73-846b-4271-bc34-77dd5a7b53fd",
+  "name": "localhost",
+  "values": [
+    {
+      "key": "protocol",
+      "value": "http",
+      "enabled": true,
+      "type": "default"
+    },
+    {
+      "key": "host",
+      "value": "localhost",
+      "enabled": true,
+      "type": "default"
+    },
+    {
+      "key": "port",
+      "value": "5500",
+      "enabled": true,
+      "type": "default"
+    },
+    {
+      "key": "token",
+      "value": "",
+      "enabled": true,
+      "type": "any"
+    }
+  ]
+}
